@@ -1,2 +1,2 @@
-# consulta_ML
-App de consulta e extração de consulta em csv usando electron
+# extrai_dados_ml
+app para extração de dados Mercado Livre

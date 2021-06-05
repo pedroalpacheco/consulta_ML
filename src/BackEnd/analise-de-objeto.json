@@ -1,0 +1,190 @@
+[{
+    id: 'MLA884250759',
+    site_id: 'MLA',
+    title: 'Samsung Galaxy A01 Core 16 Gb Negro 1 Gb Ram',
+    seller: {
+      id: 608846165,
+      permalink: 'http://perfil.mercadolibre.com.ar/1P+CE_FLA',
+      registration_date: '2020-07-13T13:21:30.000-04:00',
+      car_dealer: false,
+      real_estate_agency: false,
+      tags: [
+        'brand',
+        'user_info_verified',
+        'large_seller',
+        'credits_profile',
+        'messages_as_seller'
+      ],
+      seller_reputation: {
+        transactions: [Object],
+        power_seller_status: 'platinum',
+        metrics: [Object],
+        level_id: '5_green'
+      }
+    },
+    price: 14999,
+    prices: {
+      id: 'MLA884250759',
+      prices: [ [Object] ],
+      presentation: { display_currency: 'ARS' },
+      payment_method_prices: [],
+      reference_prices: [ [Object] ],
+      purchase_discounts: []
+    },
+    sale_price: null,
+    currency_id: 'ARS',
+    available_quantity: 1566,
+    sold_quantity: 8127,
+    buying_mode: 'buy_it_now',
+    listing_type_id: 'gold_pro',
+    stop_time: '2041-03-27T11:04:10.000Z',
+    condition: 'new',
+    permalink: 'https://www.mercadolibre.com.ar/samsung-galaxy-a01-core-16-gb-negro-1-gb-ram/p/MLA16107499',
+    thumbnail: 'http://http2.mlstatic.com/D_814600-MLA43772081185_102020-I.jpg',
+    thumbnail_id: '814600-MLA43772081185_102020',
+    accepts_mercadopago: true,
+    installments: { quantity: 3, amount: 4999.67, rate: 0, currency_id: 'ARS' },
+    address: {
+      state_id: 'AR-B',
+      state_name: 'Buenos Aires',
+      city_id: null,
+      city_name: 'Villa Celina'
+    },
+    shipping: {
+      free_shipping: true,
+      mode: 'me2',
+      tags: [ 'fulfillment', 'mandatory_free_shipping' ],
+      logistic_type: 'fulfillment',
+      store_pick_up: false
+    },
+    seller_address: {
+      id: '',
+      comment: '',
+      address_line: '',
+      zip_code: '',
+      country: { id: 'AR', name: 'Argentina' },
+      state: { id: 'AR-B', name: 'Buenos Aires' },
+      city: { id: null, name: 'Villa Celina' },
+      latitude: '',
+      longitude: ''
+    },
+    attributes: [
+      {
+        attribute_group_id: 'OTHERS',
+        attribute_group_name: 'Otros',
+        value_struct: null,
+        values: [Array],
+        value_id: '206',
+        value_name: 'Samsung',
+        source: 1,
+        id: 'BRAND',
+        name: 'Marca'
+      },
+      {
+        value_name: 'PowerVR GE8100',
+        value_struct: null,
+        attribute_group_name: 'Otros',
+        name: 'Modelo de GPU',
+        value_id: '7477214',
+        values: [Array],
+        attribute_group_id: 'OTHERS',
+        source: 1,
+        id: 'GPU_MODEL'
+      },
+      {
+        value_struct: null,
+        attribute_group_id: 'OTHERS',
+        attribute_group_name: 'Otros',
+        source: 8748668969142,
+        id: 'ITEM_CONDITION',
+        name: 'Condición del ítem',
+        value_id: '2230284',
+        value_name: 'Nuevo',
+        values: [Array]
+      },
+      {
+        source: 1,
+        value_name: 'Galaxy A',
+        attribute_group_id: 'OTHERS',
+        value_id: '322977',
+        value_struct: null,
+        values: [Array],
+        attribute_group_name: 'Otros',
+        id: 'LINE',
+        name: 'Línea'
+      },
+      {
+        value_name: 'A01 Core',
+        value_struct: null,
+        values: [Array],
+        attribute_group_id: 'OTHERS',
+        id: 'MODEL',
+        name: 'Modelo',
+        value_id: '9003227',
+        attribute_group_name: 'Otros',
+        source: 1
+      },
+      {
+        values: [Array],
+        source: 4333789534002961,
+        name: 'Largo del paquete',
+        value_name: '15 cm',
+        value_struct: [Object],
+        attribute_group_id: 'OTHERS',
+        attribute_group_name: 'Otros',
+        id: 'PACKAGE_LENGTH',
+        value_id: null
+      },
+      {
+        id: 'PACKAGE_WEIGHT',
+        value_name: '200 g',
+        values: [Array],
+        attribute_group_id: 'OTHERS',
+        source: 4333789534002961,
+        name: 'Peso del paquete',
+        value_id: null,
+        value_struct: [Object],
+        attribute_group_name: 'Otros'
+      },
+      {
+        id: 'PROCESSOR_MODEL',
+        value_id: '9069194',
+        value_name: 'Mediatek MT6739',
+        attribute_group_name: 'Otros',
+        name: 'Modelo del procesador',
+        value_struct: null,
+        values: [Array],
+        attribute_group_id: 'OTHERS',
+        source: 1
+      },
+      {
+        value_id: '963',
+        value_struct: [Object],
+        source: 1,
+        attribute_group_id: 'OTHERS',
+        attribute_group_name: 'Otros',
+        id: 'WEIGHT',
+        name: 'Peso',
+        value_name: '150 g',
+        values: [Array]
+      }
+    ],
+    differential_pricing: { id: 35713268 },
+    original_price: null,
+    category_id: 'MLA1055',
+    official_store_id: 1550,
+    domain_id: 'MLA-CELLPHONES',
+    catalog_product_id: 'MLA16107499',
+    tags: [
+      'brand_verified',
+      'extended_warranty_eligible',
+      'good_quality_picture',
+      '3x_campaign',
+      'immediate_payment',
+      'shipping_guaranteed',
+      'best_seller_candidate'
+    ],
+    catalog_listing: true,
+    use_thumbnail_id: true,
+    order_backend: 2
+  }]

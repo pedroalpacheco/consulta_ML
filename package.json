@@ -1,0 +1,43 @@
+{
+  "name": "extrai_dados_ml",
+  "version": "1.0.0",
+  "description": "app para extração de dados Mercado Livre",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "watch": "nodemon --exec electron .",
+    "publica:linux": "sudo electron-builder --linux deb tar.xz",
+    "postinstall": "electron-builder install-app-deps"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pedroalpacheco/extrai_dados_ml.git"
+  },
+  "keywords": [],
+  "author": "Pedro Al Pacheco <contato@pedropachecodev.com.br>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pedroalpacheco/extrai_dados_ml/issues"
+  },
+  "linux": {
+    "category": "Utilitario",
+    "synopsis": "Baixa consulta do MERCADO LIVRE",
+    "target": [
+      "AppImage"
+    ]
+  },
+  "homepage": "https://github.com/pedroalpacheco/extrai_dados_ml#readme",
+
+  "dependencies": {
+    "axios": "^0.21.1",
+    "bootstrap": "^5.0.1",
+    "jquery": "^3.6.0",
+    "objects-to-csv": "^1.3.6",
+    "puppeteer": "^9.1.1"
+  },
+  
+  "devDependencies": {
+    "electron": "^12.0.10",
+    "electron-builder": "^22.10.5"
+  }
+}
