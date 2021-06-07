@@ -8,10 +8,6 @@ const axios = require('axios');
 const ObjectsToCsv = require('objects-to-csv');
 const fs = require('fs');
 
-//const produto = 'iphone 13';
-//const produto = 'casa alugar em blumenau';
-//const nomeproduto = produto.replace(' ','');
-
 const diretorio = 'RELATORIOS';
 
 
@@ -26,12 +22,12 @@ const consultaml = (produto)=>{
     const nomeproduto = produto.replace(' ','');
     const salvacsv = async (dados)=>{
         const csv = new ObjectsToCsv(dados);
-        //let arquivo = `${__dirname}/${diretorio}/consulta-${nomeproduto}.csv`;
-        let arquivo = `${diretorio}/consulta-${nomeproduto}.csv`;
-        if (!fs.existsSync(diretorio)){
+        let arquivo = `${__dirname}/RELATORIOS/consulta-${nomeproduto}.csv`;
+        //let arquivo = `${diretorio}/consulta-${nomeproduto}.csv`;
+        /*if (!fs.existsSync(diretorio)){
           fs.mkdirSync(diretorio);
           
-      }
+      }*/
         await csv.toDisk(arquivo);
         //await console.log(`Arquivo criado ==>${arquivo}`)
         return arquivo
@@ -41,7 +37,6 @@ const consultaml = (produto)=>{
     axios.get(consulta)
       .then(function (response) {
         let {results} = response.data;
-        //console.log(`Resposta: ${results[1]}`)
         const itens = results.map((result,index)=>{
             return {
                 id:result.id,

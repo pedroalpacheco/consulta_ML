@@ -3,13 +3,7 @@ const {app, BrowserWindow, ipcMain, shell, dialog} = require('electron');
 const path = require('path');
 const consultaml = require('./src/BackEnd/consultaml');
 let mainWindow;
-const devMode = (process.argv || []).indexOf('--dev') !== -1
 
-if (devMode) {
-  // load the app dependencies
-  const PATH_APP_NODE_MODULES = path.join(__dirname, '..', '..', 'app', 'node_modules')
-  require('module').globalPaths.push(PATH_APP_NODE_MODULES)
-}
 
 function createWindow () {
   // Create the browser window.
@@ -41,6 +35,7 @@ ipcMain.on('canal1',(e,args)=>{
   }else{
     consultaml(args);
     setTimeout(function () {
+      //shell.openPath(`${__dirname}/src/BackEnd/RELATORIOS`)
       shell.openPath(`${__dirname}/src/BackEnd/RELATORIOS`)
   }, 3000);
     
