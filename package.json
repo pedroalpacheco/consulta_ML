@@ -1,5 +1,5 @@
 {
-  "name": "extrai_dados_ml",
+  "name": "consulta_ML",
   "version": "1.0.0",
   "description": "app para extração de dados Mercado Livre",
   "main": "main.js",
@@ -11,13 +11,13 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/pedroalpacheco/extrai_dados_ml.git"
+    "url": "git+https://github.com/pedroalpacheco/consulta_ML.git"
   },
   "keywords": [],
   "author": "Pedro Al Pacheco <contato@pedropachecodev.com.br>",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/pedroalpacheco/extrai_dados_ml/issues"
+    "url": "https://github.com/pedroalpacheco/consulta_ML/issues"
   },
   "linux": {
     "category": "Utilitario",
@@ -26,7 +26,7 @@
       "AppImage"
     ]
   },
-  "homepage": "https://github.com/pedroalpacheco/extrai_dados_ml#readme",
+  "homepage": "https://github.com/pedroalpacheco/consulta_ML#readme",
 
   "dependencies": {
     "axios": "^0.21.1",
