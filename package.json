@@ -7,7 +7,8 @@
     "start": "electron .",
     "watch": "nodemon --exec electron .",
     "publica:linux": "sudo electron-builder --linux deb tar.xz",
-    "postinstall": "electron-builder install-app-deps"
+    "postinstall": "electron-builder install-app-deps",
+    "publica:win": "sudo electron-builder -w"
   },
   "repository": {
     "type": "git",
@@ -32,8 +33,7 @@
     "axios": "^0.21.1",
     "bootstrap": "^5.0.1",
     "jquery": "^3.6.0",
-    "objects-to-csv": "^1.3.6",
-    "puppeteer": "^9.1.1"
+    "objects-to-csv": "^1.3.6"
   },
   
   "devDependencies": {

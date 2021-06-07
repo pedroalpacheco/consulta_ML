@@ -1,4 +1,8 @@
 // Modules to control application life and create native browser window
+/**
+ * Para compilar no Linux pacotes para windows é necessário
+ * instalar o wine (apt-get install wine) - Pode ser usado o Docker também
+ */
 const {app, BrowserWindow, ipcMain} = require('electron');
 const path = require('path');
 const consultaml = require('./src/BackEnd/consultaml');
