@@ -7,10 +7,12 @@
 const axios = require('axios');
 const ObjectsToCsv = require('objects-to-csv');
 const fs = require('fs');
+const {app, shell} = require('electron');
 
-const diretorio = 'RELATORIOS';
-
-
+//const diretorioraiz = app.getPath('documents');
+const diretorio = app.getPath('documents') +'/RELATORIOS-ML';
+//Pega horario da pesquisa
+const timestamp = new Date().getTime();
 
 const consultaml = (produto)=>{
   let verproduto = (!!produto);
@@ -21,16 +23,17 @@ const consultaml = (produto)=>{
     const consulta = `https://api.mercadolibre.com/sites/MLB/search?q=${produto}`;
     const nomeproduto = produto.replace(' ','');
     const salvacsv = async (dados)=>{
-        const csv = new ObjectsToCsv(dados);
-        let arquivo = `${__dirname}/RELATORIOS/consulta-${nomeproduto}.csv`;
-        //let arquivo = `${diretorio}/consulta-${nomeproduto}.csv`;
-        /*if (!fs.existsSync(diretorio)){
+      const csv = new ObjectsToCsv(dados);
+      let arquivo = `${diretorio}/Relatorio-${nomeproduto}-${timestamp}.csv`
+         if (!fs.existsSync(diretorio)){
           fs.mkdirSync(diretorio);
           
-      }*/
+      }
+       
         await csv.toDisk(arquivo);
-        //await console.log(`Arquivo criado ==>${arquivo}`)
-        return arquivo
+      setTimeout(function () {
+      shell.openPath(diretorio)
+  }, 3000);
       
     };
     //Detalhe MLB = Brasil / MLB1459 = Imoveis
@@ -53,6 +56,7 @@ const consultaml = (produto)=>{
 
           console.log(verificaitens);//Debug
           salvacsv(itens);
+          
         }
     
       })

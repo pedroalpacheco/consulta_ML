@@ -1,5 +1,5 @@
 // Modules to control application life and create native browser window
-const {app, BrowserWindow, ipcMain, shell, dialog} = require('electron');
+const {app, BrowserWindow, ipcMain} = require('electron');
 const path = require('path');
 const consultaml = require('./src/BackEnd/consultaml');
 let mainWindow;
@@ -34,11 +34,6 @@ ipcMain.on('canal1',(e,args)=>{
     mainWindow.webContents.send('resultado',item);
   }else{
     consultaml(args);
-    setTimeout(function () {
-      //shell.openPath(`${__dirname}/src/BackEnd/RELATORIOS`)
-      shell.openPath(`${__dirname}/src/BackEnd/RELATORIOS`)
-  }, 3000);
-    
   }
 });
 

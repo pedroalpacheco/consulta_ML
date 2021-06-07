@@ -20,7 +20,7 @@
     "url": "https://github.com/pedroalpacheco/consulta_ML/issues"
   },
   "linux": {
-    "category": "Utilitario",
+    "category": "Utility",
     "synopsis": "Baixa consulta do MERCADO LIVRE",
     "target": [
       "AppImage"
