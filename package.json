@@ -8,7 +8,7 @@
     "watch": "nodemon --exec electron .",
     "publica:linux": "sudo electron-builder --linux deb tar.xz",
     "postinstall": "electron-builder install-app-deps",
-    "publica:win": "sudo electron-builder -w"
+    "publica:win": "echo 'Publica num pc com win!'"
   },
   "repository": {
     "type": "git",
