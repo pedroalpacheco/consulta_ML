@@ -1,14 +1,25 @@
 {
-  "name": "consulta_ML",
+  "name": "Consulta_ML",
   "version": "1.0.0",
-  "description": "app para extração de dados Mercado Livre",
+  "description": "App para extração de dados Mercado Livre",
   "main": "main.js",
   "scripts": {
     "start": "electron .",
     "watch": "nodemon --exec electron .",
-    "publica:linux": "sudo electron-builder --linux deb tar.xz",
+    "publica:linux": "sudo electron-builder -l",
     "postinstall": "electron-builder install-app-deps",
     "publica:win": "echo 'Publica num pc com win!'"
+  },
+  "build": {
+    "linux": {
+      "target": [
+        "zip",
+        "deb"
+        
+      ],
+      "category": "Settings",
+      "icon": "./build/icone-CML.png"
+    }
   },
   "repository": {
     "type": "git",
