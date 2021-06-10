@@ -15,10 +15,13 @@
       "target": [
         "zip",
         "deb"
-        
       ],
       "category": "Settings",
       "icon": "./build/icone-CML.png"
+    },
+    "win": {
+      "target": "nsis",
+      "icon": "build/icone-CML.ico"
     }
   },
   "repository": {
@@ -39,14 +42,12 @@
     ]
   },
   "homepage": "https://github.com/pedroalpacheco/consulta_ML#readme",
-
   "dependencies": {
     "axios": "^0.21.1",
     "bootstrap": "^5.0.1",
     "jquery": "^3.6.0",
     "objects-to-csv": "^1.3.6"
   },
-  
   "devDependencies": {
     "electron": "^12.0.10",
     "electron-builder": "^22.10.5"
