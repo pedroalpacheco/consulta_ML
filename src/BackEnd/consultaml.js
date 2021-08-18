@@ -9,7 +9,6 @@ const consultaml = (produto)=>{
     //console.log(`Este é o produto digitado:${verproduto}`)
     const consulta = `https://api.mercadolibre.com/sites/MLB/search?q=${produto}`;
     
- 
     //Detalhe MLB = Brasil / MLB1459 = Imoveis
     axios.get(consulta)
       .then(function (response) {

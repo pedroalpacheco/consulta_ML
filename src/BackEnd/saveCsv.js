@@ -12,7 +12,6 @@ const saveCsv = async (dados, prd) => {
     let arquivo = `${diretorio}/Relatorio-${nomeproduto}-${timestamp}.csv`
     if (!fs.existsSync(diretorio)) {
         fs.mkdirSync(diretorio);
-
     }
 
     await csv.toDisk(arquivo);
