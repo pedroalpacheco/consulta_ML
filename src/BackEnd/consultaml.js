@@ -1,9 +1,3 @@
-/**
- * Categorias: https://api.mercadolibre.com/sites/MLB/categories#json
- * Doc api: https://developers.mercadolivre.com.br/pt_br/itens-e-buscas#Buscar-itens-por-categoria
- * Busca de produto: https://developers.mercadolivre.com.br/pt_br/categorias-e-atributos#Atributos-obrigat%C3%B3rios
- */
-
 const axios = require('axios');
 const saveCsv = require('./saveCsv');
 
@@ -44,9 +38,6 @@ const consultaml = (produto)=>{
         // handle error
         console.log(error);
       })
-      .then(function () {
-       //Continua
-      });
   }
 };
 
